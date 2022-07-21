@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(37, 37, 37, 0.507);
+    border-radius: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-image: linear-gradient(rgba(38, 38, 146, 0.815),rgb(119, 17, 145));
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-about{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 2px;
+}
+.Contact{
+    font-size:60px;
+    text-align: center;
+    font-weight:bold;
+    color: transparent;
+    -webkit-text-stroke: 0.6px white;
+}
+.btn{
+    transition: all ease-in-out;
+    transition-delay: 150ms;
+    background: rgb(107 33 168 );
+    width: 130px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.btn:hover{
+    background:rgb(145, 47, 224);
+    transition-duration: 300ms;
 }
